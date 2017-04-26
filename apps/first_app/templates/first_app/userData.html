@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Data</title>
+  </head>
+  <body>
+    <p>Post By: {{userInstance.name}}</p>
+    <p>Count:{{userInstance.all_quotes.count}}</p>
+    {%for quote in userInstance.all_quotes.all%}
+
+      <p>{{quote.quote_content}}</p>
+    {%endfor%}
+
+    <a href="/">Logout</a>
+    <a href="/quotes">Dashboard</a>
+
+  </body>
+</html>
