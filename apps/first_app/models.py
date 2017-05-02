@@ -37,7 +37,7 @@ class UserManager(models.Manager):
     def createQuoteLogic(self,quotedBy,message):
         errormessages =[]
         if not quotedBy or len(quotedBy)<4:
-            errormessages.append("quted by field Should contain only alphabets atleast 4")
+            errormessages.append("quoted by field Should contain only alphabets atleast 4")
         if not message or len(message)<11 :
             errormessages.append("Message should contain atleast 10 characters and cannot be empty")
         if not errormessages:
